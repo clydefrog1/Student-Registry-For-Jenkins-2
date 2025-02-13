@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Installing dependencies') {
             steps {
-                'npm install'
+                bat 'npm install'
             }
         }
         stage('Starting the application') {
             steps {
-                'npm run start'
+                bat 'npm run start'
             }
         }
         stage('Running tests') {
             steps {
-                'npm run test'
+                bat 'npm run test'
             }
         }
     }
