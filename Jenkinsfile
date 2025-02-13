@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Installing dependencies') {
             steps {
-				'npm install'
+                'npm install'
             }
         }
         stage('Starting the application') {
             steps {
-				'npm run start'
+                'npm run start'
             }
         }
-		stage('Running tests') {
+        stage('Running tests') {
             steps {
-				'npm run test'
+                'npm run test'
             }
         }
     }
